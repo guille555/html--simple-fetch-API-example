@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "OfficeCodePro";
+  font-style: normal;
+  src: url("../assets/fnt/officecodepro-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Aileron";
+  font-style: normal;
+  src: url("../assets/fnt/Aileron-Regular-webfont.woff") format("woff");
+}
+
+body {
+  background-color: #222;
+}
+
+.header {
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+
+.header > .container_banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .container_banner > .container_menu_bars {
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.header > .container_banner > .container_menu_bars > i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.header > .container_banner > .container_logo {
+  width: 6rem;
+  display: inline-block;
+}
+
+.header > .container_banner > .container_logo > a > img {
+  max-width: 100%;
+}
+
+.header > .container_login {
+  margin-right: 1rem;
+}
+
+.header > .container_login > i {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.main {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  min-height: calc(100vh - (3rem + 2rem + 3rem));
+}
+
+.main > .title_core {
+  font-family: "Aileron";
+  font-size: 2rem;
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.main > .container_form {
+  width: 80%;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #cebca5;
+}
+
+.form_todo > .form_field {
+  margin-bottom: 0.25rem;
+}
+
+.form_todo > .form_field:last-child {
+  margin-bottom: 0;
+}
+
+.form_todo > .form_field > .label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: "OfficeCodePro";
+  font-size: 1rem;
+}
+
+.form_todo > .form_field > .form_input {
+  width: 100%;
+  background-color: #FFFAFA;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-family: "OfficeCodePro";
+  font-size: 1rem;
+}
+
+.form_todo > .form_field > .form_input--text_area {
+  resize: none;
+  height: 8rem;
+}
+
+.form_todo > .form_field > .button {
+  border: none;
+  outline: none;
+  display: inline-block;
+  background-color: #FFFAFA;
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  border-radius: 0.25rem;
+  font-family: "OfficeCodePro";
+}
+
+.form_todo > .form_field > .button:first-child {
+  margin-left: 0;
+}
+
+.form_todo > .form_field > .button:last-child {
+  margin-right: 0;
+}
+
+.main > .container_table {
+  width: 80%;
+  max-width: 720px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+.main .container_table > .table {
+  background-color: #9fe673;
+  border-collapse: collapse;
+  font-family: "OfficeCodePro";
+  table-layout: fixed;
+  width: 720px;
+}
+
+.main > .container_table > .table > .table_header > tr > th.column_id {
+  width: 64px;
+}
+
+.main > .container_table > .table > .table_header > tr > th.column_title {
+  width: 530px;
+}
+
+.main > .container_table > .table > .table_header > tr > th.column_actions {
+  width: 120px;
+}
+
+.main > .container_table > .table > .table_header > tr > th,
+.main > .container_table > .table > .table_body > tr > td,
+.main > .container_table > .table > .table_footer > tr > td {
+  border-top-width: 2px;
+  border-top-color: white;
+  border-top-style: solid;
+}
+
+.main > .container_table > .table > .table_footer > tr > td {
+  border-bottom-width: 2px;
+  border-bottom-color: white;
+  border-bottom-style: solid;
+}
+
+.main > .container_table > .table > .table_body > tr:nth-child(odd){
+  background-color: #8aeb60;
+}
+.main > .container_table > .table > .table_body > tr:nth-child(odd){
+  background-color: #60c6eb;
+}
+
+.main > .container_table > .table > .table_body > tr > td:first-child {
+  text-align: center;
+}
+
+.main > .container_table > .table > .table_body > tr > .cell_actions > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main > .container_table > .table > .table_body > tr > .cell_actions > div > div {
+  padding: 0.15rem;
+}
+.main > .container_table > .table > .table_body > tr > .cell_actions > div > div > i {
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.main > .container_table > .table > .table_header > tr,
+.main > .container_table > .table > .table_footer > tr {
+  background-color: #5151db;
+}
+
+.main > .container_table > .table > .table_footer > tr > td {
+  font-weight: bold;
+}
+
+.main > .container_table > .table > .table_footer > tr > td:first-child {
+  text-align: right;
+}
+
+
+
+.footer {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.footer > address > p {
+  font-family: "OfficeCodePro";
+  font-style: normal;
+  margin: 0;
+}

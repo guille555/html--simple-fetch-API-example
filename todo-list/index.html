@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="todo, api example">
+    <meta name="description" content="en example of API use with JS">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/ico/bolt-solid.ico">
+    <link rel="shortcut icon" href="assets/ico/bolt-solid.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize-V8.0.1.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/solid.min.css">
+    <title>ToDo List Example</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container_banner">
+        <div class="container_menu_bars">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="container_logo">
+          <a href="#">
+            <img src="assets/img/logoipsum-341.svg" alt="mock company logo">
+          </a>
+        </div>
+      </div>
+      <div class="container_login">
+        <i class="fa-solid fa-right-to-bracket"></i>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="title_core">TODOs</h1>
+      <div class="container_form">
+        <form id="form" class="form_todo" autocomplete="off">
+          <div class="form_field">
+            <label for="title" class="label">Title:</label>
+            <input type="text" name="title" id="title" class="form_input form_input_text">
+          </div>
+          <div class="form_field">
+            <label for="body" class="label">Body:</label>
+            <textarea name="body" id="body" class="form_input form_input--text_area"></textarea>
+          </div>
+          <div class="form_field">
+            <input type="submit" value="save" class="button">
+            <input type="reset" value="clear" class="button">
+          </div>
+        </form>
+      </div>
+      <div class="container_table">
+        <table class="table">
+          <thead class="table_header">
+            <tr class="header_row">
+              <th class="column_id">ID</th>
+              <th class="column_title">TITLE</th>
+              <th class="column_actions">ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody class="table_body">
+          </tbody>
+          <tfoot class="table_footer">
+            <tr>
+              <td colspan="2">TOTAL:</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <address>
+        <p>DEV Scout</p>
+      </address>
+    </footer>
+    <div class="todo_container">
+      <form class="form_todo">
+        <div class="container_close_button">
+          <i class="fa-solid fa-xmark" title="close"></i>
+        </div>
+        <div class="form_field">
+          <label for="title" class="label">Title:</label>
+          <input type="text" name="title" id="title" class="form_input form_input_text" readonly>
+        </div>
+        <div class="form_field">
+          <label for="todo_body" class="label">Body:</label>
+          <textarea name="todo_body" id="todo_body" class="form_input form_input--text_area" readonly></textarea>
+        </div>
+      </form>
+    </div>
+    <template id="template_todo">
+      <tr>
+        <td class="todo_id"></td>
+        <td class="todo_title"></td>
+        <td class="cell_actions">
+          <div>
+            <div class="detail">
+              <i class="fa-solid fa-circle-info"></i>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </template>
+    <script type="module" src="/js/page/script_index.js"></script>
+  </body>
+</html>
